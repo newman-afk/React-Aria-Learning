@@ -1,0 +1,38 @@
+{
+  "---": {
+    "title": "CONCEPTS",
+    "type": "separator"
+  },
+  "----": {
+    "title": "BUTTONS",
+    "type": "separator"
+  },
+  "-----": {
+    "title": "COLLECTIONS",
+    "type": "separator"
+  },
+  "------": {
+    "title": "DATE AND TIME",
+    "type": "separator"
+  },
+  "-------": {
+    "title": "FORMS",
+    "type": "separator"
+  },
+  "--------": {
+    "title": "NAVIGATION",
+    "type": "separator"
+  },
+  "---------": {
+    "title": "OVERLAYS",
+    "type": "separator"
+  },
+  "----------": {
+    "title": "PICKERS",
+    "type": "separator"
+  },
+  "-----------": {
+    "title": "STATUS",
+    "type": "separator"
+  }
+}
