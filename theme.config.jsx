@@ -26,14 +26,15 @@ const logo = (
 
 const config = {
   project: {
-    link: "https://github.com/shuding/nextra",
+    link: "https://github.com/newman-afk/React-Aria-Learning",
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra/tree/main/docs",
+  docsRepositoryBase:
+    "https://github.com/newman-afk/React-Aria-Learning/tree/main",
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== "/") {
       return {
-        titleTemplate: "%s – Nextra",
+        titleTemplate: "%s – Rust",
       }
     }
   },

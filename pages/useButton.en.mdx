@@ -1,0 +1,76 @@
+import ResultBlock from "./ResultBlock"
+import { Button, StyledButton } from "./react-aria-examples/BUTTONS"
+
+# useButton
+
+👉 [Official Documentation][Arbitrary case-insensitive reference useButton]
+
+## Basic usage
+
+```tsx
+import { useButton } from "@react-aria/button"
+import { useRef } from "react"
+import type { RefObject } from "react"
+import type { AriaButtonProps } from "react-aria"
+
+function Button(props: AriaButtonProps) {
+  const ref: RefObject<any> = useRef()
+  const { buttonProps } = useButton(props, ref)
+  const { children } = props
+  return (
+    <button {...buttonProps} ref={ref}>
+      {children}
+    </button>
+  )
+}
+
+export default Button
+```
+
+Generates:
+
+<ResultBlock>
+  <Button>Unstyled Button</Button>
+</ResultBlock>
+
+Description: This hook is fantastic but hard to style because it's props are not support className
+
+---
+
+### Add className to props
+
+```tsx
+import { useButton } from "@react-aria/button"
+import { useRef } from "react"
+import type { RefObject } from "react"
+import type { AriaButtonProps } from "react-aria"
+
+interface ButtonProps extends AriaButtonProps {
+  className: string
+}
+
+function Button(props: ButtonProps) {
+  const ref: RefObject<any> = useRef()
+  const { buttonProps } = useButton(props, ref)
+  const { children, className } = props
+  return (
+    <button {...buttonProps} className={className} ref={ref}>
+      {children}
+    </button>
+  )
+}
+
+export default Button
+
+<Button className='nx-font-extrabold nx-bg-slate-500 nx-text-slate-50 active:nx-scale-95 dark:nx-bg-slate-50 nx-px-4 nx-py-2 nx-rounded'>
+      example
+</Button>
+```
+
+Generates:
+
+<ResultBlock>
+  <StyledButton />
+</ResultBlock>
+
+[Arbitrary case-insensitive reference useButton]: https://react-spectrum.adobe.com/react-aria/useButton.html

@@ -5,6 +5,7 @@
     "type": "separator"
   },
   "getting-started": "Getting Started",
+  "why-react-aria": "Why React Aria?",
   "---": {
     "title": "CONCEPTS",
     "type": "separator"
@@ -18,6 +19,7 @@
     "title": "BUTTONS",
     "type": "separator"
   },
+  "useButton": "useButton",
   "------": {
     "title": "COLLECTIONS",
     "type": "separator"
