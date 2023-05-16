@@ -1,6 +1,6 @@
-import { Button } from "./react-aria-examples/BUTTONS"
+import { Button } from "../react-aria-examples/BUTTONS"
 import ResultBlock from "./ResultBlock"
-import { StyledButton } from "./react-aria-examples/BUTTONS"
+import { StyledButton } from "../react-aria-examples/BUTTONS"
 
 function test() {
   return (
