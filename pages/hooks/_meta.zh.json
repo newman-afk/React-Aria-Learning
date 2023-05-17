@@ -1,0 +1,76 @@
+{
+  "--": {
+    "title": "INTRODUCTION",
+    "type": "separator"
+  },
+  "getting-started": "Getting Started",
+  "---": {
+    "title": "CONCEPTS",
+    "type": "separator"
+  },
+  "accessibility": "Accessbility",
+  "----": {
+    "title": "INTERACTIONS",
+    "type": "separator"
+  },
+  "-----": {
+    "title": "BUTTONS",
+    "type": "separator"
+  },
+  "------": {
+    "title": "COLLECTIONS",
+    "type": "separator"
+  },
+  "-------": {
+    "title": "COLOR",
+    "type": "separator"
+  },
+  "--------": {
+    "title": "DATE AND TIME",
+    "type": "separator"
+  },
+  "---------": {
+    "title": "DRAG AND DROP",
+    "type": "separator"
+  },
+  "----------": {
+    "title": "FOCUS",
+    "type": "separator"
+  },
+  "-----------": {
+    "title": "FORMS",
+    "type": "separator"
+  },
+  "------------": {
+    "title": "NAVIGATION",
+    "type": "separator"
+  },
+  "-------------": {
+    "title": "OVERLAYS",
+    "type": "separator"
+  },
+  "--------------": {
+    "title": "PICKERS",
+    "type": "separator"
+  },
+  "---------------": {
+    "title": "STATUS",
+    "type": "separator"
+  },
+  "----------------": {
+    "title": "CONTENT",
+    "type": "separator"
+  },
+  "-----------------": {
+    "title": "INTERNATIONALIZATION",
+    "type": "separator"
+  },
+  "------------------": {
+    "title": "SERVER SIDE RENDERING",
+    "type": "separator"
+  },
+  "-------------------": {
+    "title": "UTILITIES",
+    "type": "separator"
+  }
+}

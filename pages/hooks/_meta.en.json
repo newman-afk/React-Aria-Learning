@@ -1,10 +1,10 @@
 {
-  "index": { "title": "React Aria Learning", "display": "hidden" },
   "--": {
     "title": "INTRODUCTION",
     "type": "separator"
   },
   "getting-started": "Getting Started",
+  "why-react-aria": "Why React Aria?",
   "---": {
     "title": "CONCEPTS",
     "type": "separator"
@@ -18,6 +18,7 @@
     "title": "BUTTONS",
     "type": "separator"
   },
+  "useButton": "useButton",
   "------": {
     "title": "COLLECTIONS",
     "type": "separator"
@@ -73,6 +74,5 @@
   "-------------------": {
     "title": "UTILITIES",
     "type": "separator"
-  },
-  "components": "Conponents"
+  }
 }

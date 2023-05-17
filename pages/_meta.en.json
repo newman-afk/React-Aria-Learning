@@ -1,80 +1,18 @@
 {
-  "index": { "title": "React Aria Learning", "display": "hidden" },
-  "--": {
-    "title": "INTRODUCTION",
-    "type": "separator"
+  "index": {
+    "title": "Home",
+    "type": "page"
   },
-  "getting-started": "Getting Started",
-  "why-react-aria": "Why React Aria?",
-  "---": {
-    "title": "CONCEPTS",
-    "type": "separator"
+  "hooks": {
+    "title": "Hooks",
+    "type": "page"
   },
-  "accessibility": "Accessbility",
-  "----": {
-    "title": "INTERACTIONS",
-    "type": "separator"
+  "components": {
+    "title": "Components",
+    "type": "page"
   },
-  "-----": {
-    "title": "BUTTONS",
-    "type": "separator"
-  },
-  "useButton": "useButton",
-  "------": {
-    "title": "COLLECTIONS",
-    "type": "separator"
-  },
-  "-------": {
-    "title": "COLOR",
-    "type": "separator"
-  },
-  "--------": {
-    "title": "DATE AND TIME",
-    "type": "separator"
-  },
-  "---------": {
-    "title": "DRAG AND DROP",
-    "type": "separator"
-  },
-  "----------": {
-    "title": "FOCUS",
-    "type": "separator"
-  },
-  "-----------": {
-    "title": "FORMS",
-    "type": "separator"
-  },
-  "------------": {
-    "title": "NAVIGATION",
-    "type": "separator"
-  },
-  "-------------": {
-    "title": "OVERLAYS",
-    "type": "separator"
-  },
-  "--------------": {
-    "title": "PICKERS",
-    "type": "separator"
-  },
-  "---------------": {
-    "title": "STATUS",
-    "type": "separator"
-  },
-  "----------------": {
-    "title": "CONTENT",
-    "type": "separator"
-  },
-  "-----------------": {
-    "title": "INTERNATIONALIZATION",
-    "type": "separator"
-  },
-  "------------------": {
-    "title": "SERVER SIDE RENDERING",
-    "type": "separator"
-  },
-  "-------------------": {
-    "title": "UTILITIES",
-    "type": "separator"
-  },
-  "components": "Components"
+  "about": {
+    "title": "About",
+    "type": "page"
+  }
 }
