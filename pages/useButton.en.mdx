@@ -1,5 +1,9 @@
-import ResultBlock from "./ResultBlock"
-import { Button, StyledButton } from "@/react-aria-examples/BUTTONS"
+import ResultBlock from "@/ResultBlock"
+import {
+  Button,
+  StyledButton,
+  NormalButton,
+} from "@/react-aria-examples/BUTTONS"
 
 # useButton
 
@@ -7,7 +11,9 @@ import { Button, StyledButton } from "@/react-aria-examples/BUTTONS"
 
 ## Basic usage
 
-```tsx
+```tsx showLineNumbers
+"use client"
+
 import { useButton } from "@react-aria/button"
 import { useRef } from "react"
 import type { RefObject } from "react"
@@ -39,9 +45,11 @@ Description: This hook is fantastic but hard to style because it's props are not
 
 ### Add className to props
 
-```tsx
+```tsx showLineNumbers
+"use client"
+
 import { useButton } from "@react-aria/button"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import type { RefObject } from "react"
 import type { AriaButtonProps } from "react-aria"
 
@@ -62,15 +70,44 @@ function Button(props: ButtonProps) {
 
 export default Button
 
-<Button className='nx-font-extrabold nx-bg-slate-500 nx-text-slate-50 active:nx-scale-95 dark:nx-bg-slate-50 nx-px-4 nx-py-2 nx-rounded'>
-      example
-</Button>
+export function StyledButton() {
+  const [buttonContent, setButtonContent] = useState("React Aria Button")
+  return (
+    <Button
+      isDisabled={false} // unnecessary
+      type='button' //default
+      aria-label='React Aria Button' // In this case the label is unnecessary
+      onPressStart={() => setButtonContent("Press Start")}
+      onPressEnd={() => setButtonContent("Press End")}
+      className='nx-font-extrabold nx-bg-slate-500 nx-text-slate-50 active:nx-scale-95 dark:nx-bg-slate-50 nx-px-4 nx-py-2 nx-rounded'
+    >
+      {buttonContent}
+    </Button>
+  )
+}
+
+export function NormalButton() {
+  return (
+    <button
+      disabled={false} // unnecessary
+      type='button' //default
+      aria-label='Normal Button' // In this case the label is unnecessary
+      onClick={() => alert("Button Pressed!")}
+      className='nx-font-extrabold nx-bg-slate-500 nx-text-slate-50 active:nx-scale-95 dark:nx-bg-slate-50 nx-px-4 nx-py-2 nx-rounded'
+    >
+      Normal Button
+    </button>
+  )
+}
 ```
 
 Generates:
 
 <ResultBlock>
   <StyledButton />
+  <NormalButton />
 </ResultBlock>
+
+Description: Actually you can use the React Aria Button Components [Components/Button](/components/Button)
 
 [Arbitrary case-insensitive reference useButton]: https://react-spectrum.adobe.com/react-aria/useButton.html

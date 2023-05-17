@@ -4,7 +4,7 @@ interface ResultBlockProps {
 
 function ResultBlock({ children }: ResultBlockProps) {
   return (
-    <div className=' nx-border nx-rounded-md dark:nx-border-gray-600 nx-p-4 nx-my-4'>
+    <div className=' nx-flex nx-gap-2 nx-border nx-rounded-md dark:nx-border-gray-600 nx-p-4 nx-my-4'>
       {children}
     </div>
   )
