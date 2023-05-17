@@ -1,3 +1,5 @@
+"use client"
+
 import { useButton } from "@react-aria/button"
 import { useRef } from "react"
 import type { RefObject } from "react"
